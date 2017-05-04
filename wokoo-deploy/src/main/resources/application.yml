@@ -1,0 +1,20 @@
+server:
+  port: 9526
+
+dataSource:
+  url: jdbc:mysql://127.0.0.1:3306/wokoo?useUnicode=true&characterEncoding=utf-8
+  username: wokoo-dev
+  password: xxxxxxxxxx
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  filters: stat
+  maxActive: 20
+  initialSize: 1
+  maxWait: 60000
+  validationQuery: select 1
+  minIdle: 1
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 300000
+  testWhileIdle: true
+  testOnBorrow: false
+  poolPreparedStatements: true
+  maxOpenPreparedStatements: 20
